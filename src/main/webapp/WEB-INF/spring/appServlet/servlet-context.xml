@@ -39,7 +39,8 @@
 	</beans:bean>
 	
 	
-	<beans:bean id="mappingMongoConverter" class="org.springframework.data.mongodb.core.convert.MappingMongoConverter">
+	<beans:bean id="mappingMongoConverter" 
+	class="org.springframework.data.mongodb.core.convert.MappingMongoConverter">
 		<beans:constructor-arg name="mongoDbFactory" ref="mongoDbFactory" />
 		<beans:constructor-arg name="mappingContext" ref="mappingContext"/>
 		<beans:property name="typeMapper" ref="defaultMongoTypeMapper"/>	

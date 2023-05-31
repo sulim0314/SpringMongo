@@ -17,28 +17,22 @@ public class MemoServiceImpl implements MemoService {
 
 	@Override
 	public int insertMemo(MemoVO memo) {
-		//글번호 관련 로직 처리
-		
-		
 		return mMapper.insertMemo(memo);
 	}
 
 	@Override
 	public List<MemoVO> listMemo() {
-		// TODO Auto-generated method stub
-		return null;
+		return this.mMapper.listMemo();
 	}
 
 	@Override
 	public int deleteMemo(String id) {
-		// TODO Auto-generated method stub
-		return 0;
+		return this.mMapper.deleteMemo(id);
 	}
 
 	@Override
 	public int updateMemo(MemoVO memo) {
-		// TODO Auto-generated method stub
-		return 0;
+		return this.mMapper.updateMemo(memo);
 	}
 
 	@Override
@@ -47,3 +41,10 @@ public class MemoServiceImpl implements MemoService {
 	}
 
 }
+
+
+
+
+
+
+

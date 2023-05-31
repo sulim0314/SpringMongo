@@ -37,7 +37,10 @@
 <!-- http://localhost:9090/MyWeb/memo/MemoAdd?name=sdfsdf&msg=sdfsdf
 	http://localhost:9090/MyWeb/MemoAdd?name=aaa&msg=bbb
  -->
-<form name="mf" action="memoEdit" method="post">
+<form name="mf" action="../edit" method="post">
+		<!-- hidden data----------------------------------- -->
+		<input type='hidden' name="id" value="${memo.id}">
+		<!-- ----------------------------------------------- -->
 		<!-- table로 화면과 같이 구성하세요 -->
 		<table border="1">
 			<tr>
